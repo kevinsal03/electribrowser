@@ -3,18 +3,44 @@
   <head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
+    <link rel="stylesheet" href="css/browserWindow.css"
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
-    <i class="fas fa-wifi"></i>
+    <div id="container">
+      <div id="topBarContainer">
+        <div id="tabsContainer" class="noselect">
+          <span>tabs coming soon!</span>
+        </div>
+        <div id="navBarContainer" class="noselect">
+          <button type="button" class="btn btn-light" onclick="page.loadURL('https://google.com')"><i class="fas fa-home"></i></button>
+          <input type="text" id="urlbar" value="test" placeholder="url"></input>
+          <div style="float: right;">
+            <div class="btn-group dropleft">
+              <button type="button" class="btn btn-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bars"></i></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="javascript:null(0)" onclick="page.openDevTools()">Open Developer Tools</a>
+                <a class="dropdown-item" href="javascript:null(0)" onclick="goHome()">Home</a>
+                <a class="dropdown-item" href="javascript:null(0)" onclick="goSettings()">Home</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="browserWindowContainer" id="browserWindowContainer">
+        <div class="browserWindow" id="browserWindow">
+          <webview id='bwView' class='bwebview' src="https://google.com" autosize></webview>
+        </div>
+        <!--<div class="browserWindow" id="browserWindow_INT" style="display: none;">
+          <h1>internal</h1>
+          <webview id='biView' class='bwebview' src="index_old.html" autosize node-intergration plugins></webview>
+        </div>-->
+      </div>
+    </div>
     <script>
       // You can also require other files to run in this process
-      require('./renderer.js')
+      require('./js/renderer.js')
     </script>
+    <script src="./js/browserwindow.js"></script>
   </body>
 </html>

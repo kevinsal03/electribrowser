@@ -1,0 +1,35 @@
+.bwebview{
+  width: 100%;
+  height: 100%;
+}
+.browserWindow{
+  width: 100%;
+  height: 100%;
+}
+.noselect {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */
+}
+#navBarContainer{
+  margin-bottom: 5px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+#container {
+  width: 100vw;
+  height: 100vh;
+  display: table;
+}
+
+#topBarContainer {
+  /*height: 100px;*/
+  height: 1vh;
+  background-color: gray;
+  display: table-row;
+}
+
+#browserWindowContainer {
+  display: table-row;
+}
