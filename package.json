@@ -16,6 +16,6 @@
   "author": "Kevin Salvatorelli",
   "license": "GPL3.0",
   "devDependencies": {
-    "electron": "^2.0.0"
+    "electron": "^2.0.8"
   }
 }
