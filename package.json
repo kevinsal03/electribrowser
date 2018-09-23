@@ -1,0 +1,21 @@
+{
+  "name": "electribrowser",
+  "version": "1.0.0",
+  "description": "electron-based web browser",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "web",
+    "browser",
+    "webbrowser"
+  ],
+  "author": "Kevin Salvatorelli",
+  "license": "GPL3.0",
+  "devDependencies": {
+    "electron": "^2.0.0"
+  }
+}
