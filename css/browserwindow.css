@@ -39,3 +39,20 @@
   justify-content: space-between;
   flex-wrap: nowrap;
 }
+.inTextButton{
+  position:absolute;
+  right: 0px;
+  top: 4px;
+  border:none;
+  height:20px;
+  width:20px;
+  border-radius:100%;
+  outline:none;
+  text-align:center;
+  font-weight:bold;
+  padding:2px;
+}
+.buttonInside{
+  position:relative;
+  margin-bottom:10px;
+}  

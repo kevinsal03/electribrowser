@@ -16,8 +16,10 @@
             <button type="button" class="btn btn-light" onclick="page.loadURL('https://google.com')"><i class="fas fa-home"></i></button>
             <button type="button" class="btn btn-light" onclick="page.reload()"><i class="fas fa-redo"></i></button>
           </div>
-          <div style="align-self: center;">
-            <input type="text" id="urlbar" class="form-control" style="width: 80vw;" value="" placeholder="url"></input>
+          <div class="buttonInside" style="align-self: center;">
+            <input type="text" id="urlbar" class="form-control" style="width: 60vw;" value="" placeholder="url">
+              <button type="button" class="inTextButton" onclick="loadPageFromUrlBar()"><i class="far fa-arrow-alt-circle-right" aria-hidden="true"></i></button>
+            </input>
           </div>
           <div style="/*float: right;*/ align-self: flex-end;">
             <div class="btn-group dropleft">
