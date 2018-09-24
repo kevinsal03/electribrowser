@@ -12,11 +12,6 @@
   -ms-user-select: none;      /* IE 10+ */
   user-select: none;          /* Likely future */
 }
-#navBarContainer{
-  margin-bottom: 5px;
-  margin-left: 3px;
-  margin-right: 3px;
-}
 #container {
   width: 100vw;
   height: 100vh;
@@ -32,4 +27,14 @@
 
 #browserWindowContainer {
   display: table-row;
+}
+#navBarContainer {
+  margin-bottom: 5px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.flexNoWrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
 }
