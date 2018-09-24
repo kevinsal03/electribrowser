@@ -22,6 +22,7 @@
   /*height: 100px;*/
   height: 1vh;
   background-color: gray;
+  overflow: hidden;
   display: table-row;
 }
 
